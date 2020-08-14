@@ -16,23 +16,20 @@ This image will not be blocked because it takes up a lot of resources.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Flaintuv00%2Fv2ray-heroku)
 
-## ENV settings
-
-### UUID
-
-`UUID`> `A UUID for the user to authenticate when connecting.`
 
 ## Note
+
+`UUID`> `A UUID for the user to authenticate when connecting.`
 
 The WebSocket path is `/`.
 
 `alterId` is `64`.
 
+The client can use `Websocket` port `80`, or `Websocket+TLS` port `443` for transmission.
+
 V2Ray will automatically install the latest version during deployment.
 
 **For security reasons, unless you use a CDN, please do not use a custom domain name. Instead, use the secondary domain name assigned by Heroku to achieve V2Ray Websocket + TLS. **
 
-
-Configure V2 client
 
 ![](https://github.com/laintuv00/v2ray-heroku/blob/master/client.png)
