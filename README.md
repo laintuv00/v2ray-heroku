@@ -34,4 +34,4 @@ V2Ray will automatically install the latest version during deployment.
 
 
 Configure V2 client
-1. To configure the client, please set it according to the requirements of the picture, otherwise the network cannot be connected:![](https://github.com/laintuv00/v2ray-heroku/blob/master/img/client.png)
+1. To configure the client, please set it according to the requirements of the picture, otherwise the network cannot be connected:![](https://github.com/laintuv00/v2ray-heroku/blob/master/client.png)
