@@ -34,4 +34,5 @@ V2Ray will automatically install the latest version during deployment.
 
 
 Configure V2 client
+
 ![](https://github.com/laintuv00/v2ray-heroku/blob/master/client.png)
