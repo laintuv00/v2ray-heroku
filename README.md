@@ -31,3 +31,7 @@ The WebSocket path is `/`.
 V2Ray will automatically install the latest version during deployment.
 
 **For security reasons, unless you use a CDN, please do not use a custom domain name. Instead, use the secondary domain name assigned by Heroku to achieve V2Ray Websocket + TLS. **
+
+
+Configure V2 client
+1. To configure the client, please set it according to the requirements of the picture, otherwise the network cannot be connected:![](https://github.com/laintuv00/v2ray-heroku/blob/master/img/client.png)
