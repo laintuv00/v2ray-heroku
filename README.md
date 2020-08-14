@@ -1,33 +1,33 @@
 # V2Ray Heroku
 
-## 概述
+## Overview
 
-用于在 Heroku 上部署 V2Ray Websocket。
+Used to deploy V2Ray Websocket on Heroku.
 
-**Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。**
+**Heroku provides us with a free container service, we should not abuse it, so this project should not be used as a long-term use. **
 
-**可以部署两个以上的应用，实现 [负载均衡](https://toutyrater.github.io/app/balance.html)，避免长时间大流量连接某一应用而被 Heroku 判定为滥用。**
+**You can deploy more than two applications to achieve [Load Balancing](https://toutyrater.github.io/app/balance.html) to avoid a long-term high-traffic connection to a certain application and be judged as abuse by Heroku. **
 
-**Heroku 的网络并不稳定，部署前请三思。**
+**Heroku's network is not stable, please think twice before deploying. **
 
-## 镜像
+## Mirror
 
-本镜像不会因为大量占用资源而被封号。
+This image will not be blocked because it takes up a lot of resources.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fbclswl0827%2Fv2ray-heroku)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fbclswl0827% 2Fv2ray-heroku)
 
-## ENV 设定
+## ENV settings
 
 ### UUID
 
-`UUID` > `一个 UUID，供用户连接时验证身份使用`。
+`UUID`> `A UUID for the user to authenticate when connecting.`
 
-## 注意
+## Note
 
-WebSocket 路径为 `/`。
+The WebSocket path is `/`.
 
-`alterId` 为 `64`。
+`alterId` is `64`.
 
-V2Ray 将在部署时自动安装最新版本。
+V2Ray will automatically install the latest version during deployment.
 
-**出于安全考量，除非使用 CDN，否则请不要使用自定义域名，而使用 Heroku 分配的二级域名，以实现 V2Ray Websocket + TLS。**
+**For security reasons, unless you use a CDN, please do not use a custom domain name. Instead, use the secondary domain name assigned by Heroku to achieve V2Ray Websocket + TLS. **
