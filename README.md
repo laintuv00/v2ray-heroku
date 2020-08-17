@@ -18,6 +18,7 @@ This image will not be blocked because it takes up a lot of resources.
 
 
 ## Note
+`Host`: `<app_name>.herokuapp.com`
 
 `UUID`> `A UUID for the user to authenticate when connecting.`
 
