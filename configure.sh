@@ -28,7 +28,40 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 "disableInsecureEncryption": true
             },
             "streamSettings": {
-                "network": "ws"
+                "network": "tcp",
+				"tcpSettings": {
+					"header": {
+						"type": "http",
+						"response": {
+							"version": "1.1",
+							"status": "200",
+							"reason": "OK",
+							"headers": {
+								"Content-encoding": [
+									"gzip"
+								],
+								"Content-Type": [
+									"text/html; charset=utf-8"
+								],
+								"Cache-Control": [
+									"no-cache"
+								],
+								"Vary": [
+									"Accept-Encoding"
+								],
+								"X-Frame-Options": [
+									"deny"
+								],
+								"X-XSS-Protection": [
+									"1; mode=block"
+								],
+								"X-content-type-options": [
+									"nosniff"
+								]
+							}
+						}
+					}
+				}
             }
         }
     ],
